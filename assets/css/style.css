@@ -75,6 +75,16 @@ body {
   flex-wrap: nowrap;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.06);
 }
+#content .search-header .search-details .search-input-container form .form-input {
+  width: 100%;
+}
+#content .search-header .search-details .search-input-container form .form-input input {
+  width: 80%;
+  font-size: 16px;
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+}
 #content .search-header .search-details .search-input-container form i {
   font-size: 20px;
   color: #6e6d7a;

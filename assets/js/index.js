@@ -2,6 +2,13 @@ const elemsShow = document.querySelectorAll(".show");
 const searchBtn = document.querySelector("#form-button");
 const msvInput = document.querySelector("#msv");
 const resultContentBox = document.querySelector("#result-content-box");
+const footer = document.querySelector("#footer");
+
+if (resultContentBox.offsetHeight <= 100) {
+  footer.style.marginTop = "350px";
+} else {
+  footer.style.marginTop = "130px";
+}
 
 searchBtn.addEventListener("click", async (e) => {
   e.preventDefault();
@@ -50,10 +57,17 @@ searchBtn.addEventListener("click", async (e) => {
   } else {
     alert(htmlResult[2]);
   }
+
+  if (resultContentBox.offsetHeight <= 100) {
+    footer.style.marginTop = "350px";
+  } else {
+    footer.style.marginTop = "130px";
+  }
 });
 
 const sendAnEmailAgain = (e) => {
   e.preventDefault();
 
-  window.location.href = "/assets/html/index2.html";
+  window.location.href =
+    "https://ddung203.github.io/its-collaborator-lookup-fe/assets/html/index2.html";
 };
