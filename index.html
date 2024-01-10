@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/img/logo_its.png" />
+    <script
+      src="https://kit.fontawesome.com/377998e951.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Collaborator lookup</title>
+  </head>
+  <body>
+    <div id="app">
+      <header id="header">
+        <div id="hd__inner">
+          <div class="logo-wrap">
+            <img src="./assets/img/logofull.png" alt="logo-ddung203" />
+          </div>
+          <!-- <i class="fa-solid fa-bars"></i> -->
+        </div>
+      </header>
+  
+      <div id="content">
+        <div class="search-header">
+          <div class="background-bar"></div>
+          <div class="search-details">
+            <div class="search-input-container">
+              <form autocomplete="off">
+                <div class="form-input">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input type="text" id="msv" placeholder="Nhập mã sinh viên" />
+                </div>
+                <button class="form-button"  id="form-button" type="submit">Tìm</button>
+              </form>
+            </div>
+            <h2 class="search-results-heading">Bạn gì ơi,</h2>
+            <p class="search-results-description">
+              Nhập mã sinh viên vào ô phía trên nhé!
+            </p>
+          </div>
+        </div>
+  
+        <div id="result-content-box" class="show search-content">
+        </div>
+      </div>  
+    </div>
+    <div id="footer">
+      <p>CopyRight &#169 2023 DDung203</p>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
